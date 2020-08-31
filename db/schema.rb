@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2020_08_26_035802) do
 
   create_table "appointments", force: :cascade do |t|
     t.string "date"
-    t.time "time"
+    t.string "time"
     t.integer "user_id"
     t.integer "barber_id"
     t.datetime "created_at", precision: 6, null: false

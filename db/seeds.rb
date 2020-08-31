@@ -9,6 +9,7 @@
 require 'faker'
 
 
+
 Barber.create(name: Faker::Name.name, longlitude: -73.92702 , latitude: 40.737114 )
 Barber.create(name: Faker::Name.name, longlitude: -73.92302 , latitude: 40.737114 )
 Barber.create(name: Faker::Name.name, longlitude: -73.92402 , latitude: 40.737114 )
@@ -16,3 +17,5 @@ Barber.create(name: Faker::Name.name, longlitude: -73.92502 , latitude: 40.73713
 Barber.create(name: Faker::Name.name, longlitude: -73.92602 , latitude: 40.737114 )
 Barber.create(name: Faker::Name.name, longlitude: -73.92102 , latitude: 40.737314 )
 Barber.create(name: Faker::Name.name, longlitude: -73.92602 , latitude: 40.737114 )
+
+User.create(name: "Shadman", username: "shadman-a", password_digest: "jfljksdfhlaj")
