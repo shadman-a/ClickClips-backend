@@ -18,4 +18,3 @@ Barber.create(name: Faker::Name.name, longlitude: -73.92602 , latitude: 40.73711
 Barber.create(name: Faker::Name.name, longlitude: -73.92102 , latitude: 40.737314 )
 Barber.create(name: Faker::Name.name, longlitude: -73.92602 , latitude: 40.737114 )
 
-User.create(name: "Shadman", username: "shadman-a", password_digest: "jfljksdfhlaj")

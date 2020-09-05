@@ -3,7 +3,7 @@ class CreateAppointments < ActiveRecord::Migration[6.0]
     create_table :appointments do |t|
       t.string :date
       t.string :time
-      t.integer :user_id
+      t.string :user_id
       t.integer :barber_id
 
       t.timestamps

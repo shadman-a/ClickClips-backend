@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2020_08_26_035802) do
   create_table "appointments", force: :cascade do |t|
     t.string "date"
     t.string "time"
-    t.integer "user_id"
+    t.string "user_id"
     t.integer "barber_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -28,14 +28,6 @@ ActiveRecord::Schema.define(version: 2020_08_26_035802) do
     t.string "name"
     t.float "longlitude"
     t.float "latitude"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "username"
-    t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
