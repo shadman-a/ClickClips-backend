@@ -26,6 +26,10 @@ ActiveRecord::Schema.define(version: 2020_09_06_164527) do
 
   create_table "barbers", force: :cascade do |t|
     t.string "name"
+    t.string "description"
+    t.string "image"
+    t.string "address"
+    t.string "phone"
     t.float "longlitude"
     t.float "latitude"
     t.datetime "created_at", precision: 6, null: false
@@ -41,6 +45,7 @@ ActiveRecord::Schema.define(version: 2020_09_06_164527) do
 
   create_table "services", force: :cascade do |t|
     t.string "name"
+    t.string "description"
     t.integer "price"
     t.integer "barber_id"
     t.datetime "created_at", precision: 6, null: false
