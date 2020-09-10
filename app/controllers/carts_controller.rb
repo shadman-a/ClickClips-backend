@@ -4,6 +4,12 @@ class CartsController < ApplicationController
     
     render json:carts 
   end
+
+  def show
+    cart = Cart.find(params[:id])
+
+    render json:cart
+  end
   
   def create
     cart= Cart.create(cart_params)
@@ -29,7 +35,7 @@ class CartsController < ApplicationController
   private
     
   def cart_params
-    params.require(:cart).permit(:user_id, :service_id, :appointment_id)
+    params.require(:cart).permit(:user_id, :cart_id, :appointment_id, :service_id)
   end
   
   
