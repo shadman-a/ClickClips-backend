@@ -29,7 +29,7 @@ class CartsController < ApplicationController
   private
     
   def cart_params
-    params.require(:cart).permit(:user_id, :service_id)
+    params.require(:cart).permit(:user_id, :service_id, :appointment_id)
   end
   
   

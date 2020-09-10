@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2020_09_06_164527) do
 
   create_table "carts", force: :cascade do |t|
     t.integer "service_id"
+    t.integer "appointment_id"
     t.string "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
